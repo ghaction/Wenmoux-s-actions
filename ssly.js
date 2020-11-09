@@ -1,11 +1,11 @@
 const axios = require("axios")
 //绅士领域 注册时候推荐码填：2984317 
  //抓包看uid,比如签到的post包里就有u_id,如120487
-function ssly(uid) {
+function ssly() {
     return new Promise(async resolve => {
         try {
             let url = `https://www.sslyhome.cc/mz_pbl/app_con/add_sign.php`
-            let data = `time=1600797047&mac=43f4923e7a18172b61128850c9079324&u_id=${uid}`
+            let data = `time=1600797047&mac=43f4923e7a18172b61128850c9079324&u_id=${process.env.sslyuid}`
             let res = await axios.post(url, data)
             if (res.data.state == 0) {
                 msg = res.data.erro
@@ -24,5 +24,5 @@ function ssly(uid) {
         resolve()
     })
 }
- 
-ssly(process.env.sslyuid) 
+
+module.exports=ssly
