@@ -1,7 +1,6 @@
 const axios = require("axios")
-//绅士领域 注册时候推荐码填：2984317
- 
-const uid = process.env.sslyuid; //抓包看,比如签到的post包里就有u_id,如120487
+//绅士领域 注册时候推荐码填：2984317 
+ //抓包看uid,比如签到的post包里就有u_id,如120487
 function ssly(uid) {
     return new Promise(async resolve => {
         try {
@@ -16,14 +15,14 @@ function ssly(uid) {
                 console.log(res.data)
                 msg = "签到失败,原因未知"
             }
-            console.log(msg)
+            console.log("绅士领域签到："+msg)
         } catch (err) {
             console.log(err)
             msg = "签到接口请求失败"
  
         }
-        resolve(msg)
+        resolve()
     })
 }
  
-module.exports=ssly;
+ssly(process.env.sslyuid) 
