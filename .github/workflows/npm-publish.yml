@@ -3,7 +3,7 @@ name: Github auto-sign
 on:
     push:
         branches:
-            - master
+            - main
     schedule:
         - cron: '0 14 * * *'
 jobs:
