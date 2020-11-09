@@ -25,4 +25,4 @@ function ssly() {
     })
 }
 
-module.exports=ssly
+module.exports=ssly 
