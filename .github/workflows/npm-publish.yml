@@ -31,4 +31,4 @@ jobs:
                 git config --global user.email "wenmoux@gmail.com.com" 
                 git add . 
                 git commit -m 'upload 签到结果'  
-                git push -u origin master
+                git push -u origin main
