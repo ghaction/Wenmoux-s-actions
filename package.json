@@ -1,0 +1,22 @@
+{
+  "name": "Wenmoux-s-actions",
+  "version": "1.0.0",
+  "description": "我的github actions合集",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wenmoux/Wenmoux-s-actions.git"
+  },
+  "keywords": [
+    "github",
+    "actions"
+  ],
+  "author": "Wenmoux",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
