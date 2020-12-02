@@ -4,7 +4,7 @@ const axios = require("axios")
 function ssly() {
     return new Promise(async resolve => {
         try {
-            let url = `https://www.sslyhome.cc/mz_pbl/app_con/add_sign.php`
+            let url = `https://hk.hksslyapp.xyz/mz_pbl/app_con/add_sign.php`
             let data = `time=1600797047&mac=43f4923e7a18172b61128850c9079324&u_id=${process.env.sslyuid}`
             let res = await axios.post(url, data)
             if (res.data.state == 0) {
